@@ -12,6 +12,15 @@ $("#jquery").click(function(){
   });
 
 //request with Axios
+$("#axios").click(function(){
+axios.get(url)
+.then(function(res){
+    $( "#quote" ).html(res.data);
+})
+.catch(function(){
+    console.log("error");
+})
+});
 
 //request with XHR
 
